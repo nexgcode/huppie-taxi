@@ -14,8 +14,8 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: 'EV-Horizon - Eco-Friendly Taxi Service' },
     { property: 'og:description', content: 'Your sustainable choice for eco-friendly taxi services. Book your green ride today!' },
-    { property: 'og:image', content: '/images/og-image.jpg' },
-    { name: 'twitter:card', content: 'summary_large_image' },
+    // { property: 'og:image', content: '/images/og-image.jpg' },
+    // { name: 'twitter:card', content: 'summary_large_image' },
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
