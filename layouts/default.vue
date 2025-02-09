@@ -4,13 +4,13 @@
       <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <NuxtLink to="/" class="text-2xl font-bold text-green-600">EV-Horizon</NuxtLink>
+            <NuxtLink :to="localePath('/')" class="text-2xl font-bold text-green-600">EV-Horizon</NuxtLink>
           </div>
           <div class="hidden md:flex space-x-8">
-            <NuxtLink to="/#services" class="text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
-            <NuxtLink to="/#why-us" class="text-gray-600 hover:text-green-600">{{ $t('nav.whyUs') }}</NuxtLink>
-            <NuxtLink to="/#pricing" class="text-gray-600 hover:text-green-600">{{ $t('nav.pricing') }}</NuxtLink>
-            <NuxtLink to="/#contact" class="text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#services')" class="text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#why-us')" class="text-gray-600 hover:text-green-600">{{ $t('nav.whyUs') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#pricing')" class="text-gray-600 hover:text-green-600">{{ $t('nav.pricing') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#contact')" class="text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
           </div>
           <!-- Language Switcher -->
           <div class="hidden md:flex items-center space-x-4">
@@ -39,9 +39,9 @@
         </div>
         <!-- Mobile menu -->
         <div v-show="isMenuOpen" class="md:hidden mt-4 space-y-4">
-          <NuxtLink to="/#services" class="block text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
-          <NuxtLink to="/#about" class="block text-gray-600 hover:text-green-600">{{ $t('nav.about') }}</NuxtLink>
-          <NuxtLink to="/#contact" class="block text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#services')" class="block text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#about')" class="block text-gray-600 hover:text-green-600">{{ $t('nav.about') }}</NuxtLink>
+            <NuxtLink :to="localePath('/#contact')" class="block text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
           <div class="pt-4 border-t border-gray-200">
             <p class="text-sm text-gray-600 mb-2">{{ $t('nav.language') }}</p>
             <div class="flex space-x-4">
@@ -77,13 +77,13 @@
             <h3 class="text-lg font-semibold mb-4">{{ $t('footer.quickLinks') }}</h3>
             <ul class="space-y-2">
               <li>
-                <NuxtLink to="/#services" class="text-gray-400 hover:text-white">{{ $t('footer.services') }}</NuxtLink>
+                <NuxtLink :to="localePath('/#services')" class="text-gray-400 hover:text-white">{{ $t('footer.services') }}</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#pricing" class="text-gray-400 hover:text-white">{{ $t('footer.pricing') }}</NuxtLink>
+                <NuxtLink :to="localePath('/#pricing')" class="text-gray-400 hover:text-white">{{ $t('footer.pricing') }}</NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#contact" class="text-gray-400 hover:text-white">{{ $t('footer.contact') }}</NuxtLink>
+                <NuxtLink :to="localePath('/#contact')" class="text-gray-400 hover:text-white">{{ $t('footer.contact') }}</NuxtLink>
               </li>
             </ul>
           </div>
@@ -112,6 +112,8 @@
 <script setup lang="ts">
 const isMenuOpen = ref(false)
 const { locale } = useI18n()
+
+const localePath = useLocalePath()
 
 const switchLanguage = (lang: 'en' | 'nl') => {
   locale.value = lang
