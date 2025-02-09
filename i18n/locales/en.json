@@ -19,7 +19,7 @@
     "contact": "Contact",
     "contactInfo": "Contact",
     "phone": "+31 6 81914785",
-    "email": "info{at}groentaxi.nl",
+    "email": "info{at}EV-Horizon.nl",
     "rights": "All rights reserved."
   },
   "services": {
@@ -32,7 +32,7 @@
     "longDistanceDescription": "Eco-friendly intercity travel with fixed competitive rates."
   },
   "whyUs": {
-    "title": "Why Choose GroenTaxi",
+    "title": "Why Choose EV-Horizon",
     "ecoFriendly": "Eco-Friendly",
     "ecoFriendlyDescription": "100% electric and hybrid vehicles",
     "affordable": "Affordable",
@@ -44,7 +44,7 @@
   },
   "hero": {
     "title": "Eco-Friendly Rides for a Greener Tomorrow",
-    "description": "Choose sustainable transportation with GroenTaxi. Our eco-friendly fleet reduces carbon emissions while providing comfortable and reliable service.",
+    "description": "Choose sustainable transportation with EV-Horizon. Our eco-friendly fleet reduces carbon emissions while providing comfortable and reliable service.",
     "cta": "Book Now"
   },
   "pricing": {

@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' },
         {
           name: 'description',
-          content: 'GroenTaxi - Your sustainable choice for eco-friendly taxi services in the Netherlands.'
+          content: 'EV-Horizon - Your sustainable choice for eco-friendly taxi services in the Netherlands.'
         }
       ],
       link: [

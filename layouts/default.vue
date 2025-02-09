@@ -4,7 +4,7 @@
       <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <NuxtLink to="/" class="text-2xl font-bold text-green-600">GroenTaxi</NuxtLink>
+            <NuxtLink to="/" class="text-2xl font-bold text-green-600">EV-Horizon</NuxtLink>
           </div>
           <div class="hidden md:flex space-x-8">
             <NuxtLink to="/#services" class="text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
@@ -61,7 +61,7 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 class="text-lg font-semibold mb-4">GroenTaxi</h3>
+            <h3 class="text-lg font-semibold mb-4">EV-Horizon</h3>
             <p class="text-gray-400">{{ $t('footer.description') }}</p>
           </div>
           <div>
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© {{ new Date().getFullYear() }} GroenTaxi. All rights reserved.</p>
+          <p>© {{ new Date().getFullYear() }} EV-Horizon. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -92,7 +92,7 @@
 const isMenuOpen = ref(false)
 const { locale } = useI18n()
 
-const switchLanguage = (lang: string) => {
+const switchLanguage = (lang: 'en' | 'nl') => {
   locale.value = lang
 }
 </script>

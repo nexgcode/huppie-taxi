@@ -21,7 +21,7 @@
             </a>
           </div>
           <div class="relative h-[400px] rounded-xl overflow-hidden">
-            <img src="/images/eco-taxi.jpg" alt="GroenTaxi eco-friendly vehicle" class="object-cover w-full h-full">
+            <img src="/images/eco-taxi.jpg" alt="EV-Horizon eco-friendly vehicle" class="object-cover w-full h-full">
           </div>
         </div>
       </div>

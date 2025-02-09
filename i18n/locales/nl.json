@@ -8,7 +8,7 @@
     "language": "Taal",
     "switchToNL": "Schakel naar Nederlands",
     "switchToEN": "Schakel naar Engels",
-    "whyUs": "Waarom GroenTaxi",
+    "whyUs": "Waarom EV-Horizon",
     "pricing": "Tarieven"
   },
   "footer": {
@@ -19,7 +19,7 @@
     "contact": "Contact",
     "contactInfo": "Contact",
     "phone": "+31 6 81914785",
-    "email": "info{at}groentaxi.nl",
+    "email": "info{at}EV-Horizon.nl",
     "rights": "Alle rechten voorbehouden."
   },
   "services": {
@@ -32,7 +32,7 @@
     "longDistanceDescription": "Milieuvriendelijk intercity vervoer met vaste scherpe tarieven."
   },
   "whyUs": {
-    "title": "Waarom GroenTaxi",
+    "title": "Waarom EV-Horizon",
     "ecoFriendly": "Milieuvriendelijk",
     "ecoFriendlyDescription": "100% elektrische en hybride voertuigen",
     "affordable": "Betaalbaar",
@@ -44,7 +44,7 @@
   },
   "hero": {
     "title": "Milieuvriendelijke Ritten voor een Groenere Toekomst",
-    "description": "Kies voor duurzaam vervoer met GroenTaxi. Onze milieuvriendelijke vloot vermindert de CO2-uitstoot en biedt tegelijkertijd comfortabele en betrouwbare service.",
+    "description": "Kies voor duurzaam vervoer met EV-Horizon. Onze milieuvriendelijke vloot vermindert de CO2-uitstoot en biedt tegelijkertijd comfortabele en betrouwbare service.",
     "cta": "Nu Boeken"
   },
   "pricing": {
