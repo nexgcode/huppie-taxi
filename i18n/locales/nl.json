@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over Ons",
+    "services": "Diensten",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Taal",
+    "switchToNL": "Schakel naar Nederlands",
+    "switchToEN": "Schakel naar Engels",
+    "whyUs": "Waarom GroenTaxi",
+    "pricing": "Tarieven"
+  },
+  "footer": {
+    "description": "Uw milieuvriendelijke taxiservice in Nederland.",
+    "quickLinks": "Snelle Links",
+    "services": "Diensten",
+    "pricing": "Tarieven",
+    "contact": "Contact",
+    "contactInfo": "Contact",
+    "phone": "+31 6 81914785",
+    "email": "info{at}groentaxi.nl",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "services": {
+    "title": "Onze Diensten",
+    "airportTransfers": "Luchthavenvervoer",
+    "airportTransfersDescription": "Betrouwbare en stipte ophaal- en wegbrengservice van en naar de luchthaven.",
+    "cityRides": "Stadsritten",
+    "cityRidesDescription": "Comfortabel vervoer voor uw dagelijkse woon-werkverkeer of stadsverkenning.",
+    "longDistance": "Lange Afstand",
+    "longDistanceDescription": "Milieuvriendelijk intercity vervoer met vaste scherpe tarieven."
+  },
+  "whyUs": {
+    "title": "Waarom GroenTaxi",
+    "ecoFriendly": "Milieuvriendelijk",
+    "ecoFriendlyDescription": "100% elektrische en hybride voertuigen",
+    "affordable": "Betaalbaar",
+    "affordableDescription": "Scherpe tarieven, geen verborgen kosten",
+    "comfortable": "Comfortabel",
+    "comfortableDescription": "Moderne, goed onderhouden voertuigen",
+    "professional": "Professioneel",
+    "professionalDescription": "Ervaren, gecertificeerde chauffeurs"
+  },
+  "hero": {
+    "title": "Milieuvriendelijke Ritten voor een Groenere Toekomst",
+    "description": "Kies voor duurzaam vervoer met GroenTaxi. Onze milieuvriendelijke vloot vermindert de CO2-uitstoot en biedt tegelijkertijd comfortabele en betrouwbare service.",
+    "cta": "Nu Boeken"
+  },
+  "pricing": {
+    "title": "Transparante Prijzen",
+    "followUs": "Volg Ons",
+    "baseRate": "Instaptarief",
+    "perKm": "Per Kilometer",
+    "waitingTime": "Wachttijd (per minuut)",
+    "airportPickup": "Luchthaventoeslag",
+    "minutePrice": "Minuuttarief",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    }
+  },
+  "contact": {
+    "title": "Contact Ons",
+    "whatsapp": "Contact via WhatsApp",
+    "info": "Contact Informatie"
+  }
+}

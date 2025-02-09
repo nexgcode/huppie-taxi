@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Language",
+    "switchToNL": "Switch to Dutch",
+    "switchToEN": "Switch to English",
+    "whyUs": "Why us",
+    "pricing": "Pricing"
+  },
+  "footer": {
+    "description": "Your eco-friendly taxi service in the Netherlands.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "contactInfo": "Contact",
+    "phone": "+31 6 81914785",
+    "email": "info{at}groentaxi.nl",
+    "rights": "All rights reserved."
+  },
+  "services": {
+    "title": "Our Services",
+    "airportTransfers": "Airport Transfers",
+    "airportTransfersDescription": "Reliable and punctual airport pickup and drop-off services.",
+    "cityRides": "City Rides",
+    "cityRidesDescription": "Comfortable transportation for your daily commute or city exploration.",
+    "longDistance": "Long Distance",
+    "longDistanceDescription": "Eco-friendly intercity travel with fixed competitive rates."
+  },
+  "whyUs": {
+    "title": "Why Choose GroenTaxi",
+    "ecoFriendly": "Eco-Friendly",
+    "ecoFriendlyDescription": "100% electric and hybrid vehicles",
+    "affordable": "Affordable",
+    "affordableDescription": "Competitive rates, no hidden fees",
+    "comfortable": "Comfortable",
+    "comfortableDescription": "Modern, well-maintained vehicles",
+    "professional": "Professional",
+    "professionalDescription": "Experienced, certified drivers"
+  },
+  "hero": {
+    "title": "Eco-Friendly Rides for a Greener Tomorrow",
+    "description": "Choose sustainable transportation with GroenTaxi. Our eco-friendly fleet reduces carbon emissions while providing comfortable and reliable service.",
+    "cta": "Book Now"
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "followUs": "Follow Us",
+    "baseRate": "Base Rate",
+    "perKm": "Per Kilometer",
+    "waitingTime": "Waiting Time (per minute)",
+    "airportPickup": "Airport Pickup",
+    "minutePrice": "Minute Price",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "whatsapp": "Contact via WhatsApp",
+    "info": "Contact Information"
+  }
+}
