@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content: 'EV-Horizon - Your sustainable choice for eco-friendly taxi services in the Netherlands.'
-        }
+        },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
