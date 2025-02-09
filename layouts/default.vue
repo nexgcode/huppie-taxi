@@ -76,7 +76,7 @@
             <h3 class="text-lg font-semibold mb-4">{{ $t('footer.contactInfo') }}</h3>
             <ul class="space-y-2 text-gray-400">
               <li>📞 {{ $t('footer.phone') }}</li>
-              <li>✉️ {{ $t('footer.email').replace('{at}', '@') }}</li>
+              <li>✉️info@evhorizon.nl</li>
             </ul>
           </div>
         </div>
