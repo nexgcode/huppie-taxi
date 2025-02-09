@@ -14,11 +14,15 @@
           </div>
           <!-- Language Switcher -->
           <div class="hidden md:flex items-center space-x-4">
-            <button @click="switchLanguage('en')" :class="{'text-green-600': locale === 'en', 'text-gray-600': locale !== 'en'}" class="hover:text-green-600">
+            <button @click="switchLanguage('en')"
+              :class="{ 'text-green-600': locale === 'en', 'text-gray-600': locale !== 'en' }"
+              class="hover:text-green-600">
               EN
             </button>
             <span class="text-gray-300">|</span>
-            <button @click="switchLanguage('nl')" :class="{'text-green-600': locale === 'nl', 'text-gray-600': locale !== 'nl'}" class="hover:text-green-600">
+            <button @click="switchLanguage('nl')"
+              :class="{ 'text-green-600': locale === 'nl', 'text-gray-600': locale !== 'nl' }"
+              class="hover:text-green-600">
               NL
             </button>
           </div>
@@ -26,7 +30,8 @@
             <button @click="isMenuOpen = !isMenuOpen" class="text-gray-600 hover:text-green-600">
               <span class="sr-only">{{ $t('nav.menu') }}</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
                 <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -40,11 +45,15 @@
           <div class="pt-4 border-t border-gray-200">
             <p class="text-sm text-gray-600 mb-2">{{ $t('nav.language') }}</p>
             <div class="flex space-x-4">
-              <button @click="switchLanguage('en')" :class="{'text-green-600': locale === 'en', 'text-gray-600': locale !== 'en'}" class="hover:text-green-600">
+              <button @click="switchLanguage('en')"
+                :class="{ 'text-green-600': locale === 'en', 'text-gray-600': locale !== 'en' }"
+                class="hover:text-green-600">
                 EN
               </button>
               <span class="text-gray-300">|</span>
-              <button @click="switchLanguage('nl')" :class="{'text-green-600': locale === 'nl', 'text-gray-600': locale !== 'nl'}" class="hover:text-green-600">
+              <button @click="switchLanguage('nl')"
+                :class="{ 'text-green-600': locale === 'nl', 'text-gray-600': locale !== 'nl' }"
+                class="hover:text-green-600">
                 NL
               </button>
             </div>
@@ -67,16 +76,28 @@
           <div>
             <h3 class="text-lg font-semibold mb-4">{{ $t('footer.quickLinks') }}</h3>
             <ul class="space-y-2">
-              <li><NuxtLink to="/#services" class="text-gray-400 hover:text-white">{{ $t('footer.services') }}</NuxtLink></li>
-              <li><NuxtLink to="/#pricing" class="text-gray-400 hover:text-white">{{ $t('footer.pricing') }}</NuxtLink></li>
-              <li><NuxtLink to="/#contact" class="text-gray-400 hover:text-white">{{ $t('footer.contact') }}</NuxtLink></li>
+              <li>
+                <NuxtLink to="/#services" class="text-gray-400 hover:text-white">{{ $t('footer.services') }}</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/#pricing" class="text-gray-400 hover:text-white">{{ $t('footer.pricing') }}</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/#contact" class="text-gray-400 hover:text-white">{{ $t('footer.contact') }}</NuxtLink>
+              </li>
             </ul>
           </div>
           <div>
             <h3 class="text-lg font-semibold mb-4">{{ $t('footer.contactInfo') }}</h3>
             <ul class="space-y-2 text-gray-400">
-              <li>📞 {{ $t('footer.phone') }}</li>
-              <li>✉️info@evhorizon.nl</li>
+              <li>
+                <a href="tel:+31681914785" class="flex gap-2 w-fit">
+                  <span>📞</span>{{ $t('footer.phone') }}</a>
+              </li>
+              <li>
+                <a href="mailto:info@evhorizon.nl" class="flex gap-2 w-fit">
+                  <span>✉️</span>info@evhorizon.nl</a>
+              </li>
             </ul>
           </div>
         </div>
