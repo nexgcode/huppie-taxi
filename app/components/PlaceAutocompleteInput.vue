@@ -17,7 +17,7 @@
         type="text"
         required
         :readonly="isLocked"
-        class="w-full"
+        class="w-full pr-10"
         :placeholder="props.placeholder"
         @input="handleInput"
         @focus="handleFocus"
