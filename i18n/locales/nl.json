@@ -8,17 +8,18 @@
     "language": "Taal",
     "switchToNL": "Schakel naar Nederlands",
     "switchToEN": "Schakel naar Engels",
-    "whyUs": "Waarom EV-Horizon",
+    "whyUs": "Waarom Huppie Taxi",
     "pricing": "Tarieven"
   },
   "footer": {
-    "description": "Uw milieuvriendelijke taxiservice in Nederland.",
+    "description": "Uw snelle taxiservice in Nederland.",
     "quickLinks": "Snelle Links",
     "services": "Diensten",
     "pricing": "Tarieven",
     "contact": "Contact",
     "contactInfo": "Contact",
     "phone": "+31 6 81914785",
+    "email": "info{at}huppietaxi.nl",
     "rights": "Alle rechten voorbehouden."
   },
   "services": {
@@ -28,12 +29,12 @@
     "cityRides": "Stadsritten",
     "cityRidesDescription": "Comfortabel vervoer voor uw dagelijkse woon-werkverkeer of stadsverkenning.",
     "longDistance": "Lange Afstand",
-    "longDistanceDescription": "Milieuvriendelijk intercity vervoer met vaste scherpe tarieven."
+    "longDistanceDescription": "Snel intercity vervoer met vaste scherpe tarieven."
   },
   "whyUs": {
-    "title": "Waarom EV-Horizon",
-    "ecoFriendly": "Milieuvriendelijk",
-    "ecoFriendlyDescription": "100% elektrische en hybride voertuigen",
+    "title": "Waarom Huppie Taxi",
+    "ecoFriendly": "Snelle Service",
+    "ecoFriendlyDescription": "Snel en efficiënt vervoer",
     "affordable": "Betaalbaar",
     "affordableDescription": "Scherpe tarieven, geen verborgen kosten",
     "comfortable": "Comfortabel",
@@ -42,8 +43,8 @@
     "professionalDescription": "Ervaren, gecertificeerde chauffeurs"
   },
   "hero": {
-    "title": "Milieuvriendelijke Ritten voor een Groenere Toekomst",
-    "description": "Kies voor duurzaam vervoer met EV-Horizon. Onze milieuvriendelijke vloot vermindert de CO2-uitstoot en biedt tegelijkertijd comfortabele en betrouwbare service.",
+    "title": "Snelle Ritten voor Uw Drukke Schema",
+    "description": "Kies voor snel vervoer met Huppie Taxi. Onze efficiënte vloot brengt u snel naar uw bestemming en biedt tegelijkertijd comfortabele en betrouwbare service.",
     "cta": "Nu Boeken"
   },
   "pricing": {
@@ -64,5 +65,46 @@
     "title": "Contact Ons",
     "whatsapp": "Contact via WhatsApp",
     "info": "Contact Informatie"
+  },
+  "form": {
+    "from": "Ophaallocatie",
+    "fromPlaceholder": "Voer ophaaladres in",
+    "to": "Bestemmingslocatie",
+    "toPlaceholder": "Voer bestemmingsadres in",
+    "phone": "Telefoonnummer",
+    "phonePlaceholder": "+31 6 12345678",
+    "email": "Email",
+    "typeHere": "Typ hier",
+    "date": "Datum",
+    "time": "Tijd",
+    "passengers": "Aantal Passagiers",
+    "passengersPlaceholder": "1",
+    "message": "Bericht",
+    "messagePlaceholder": "Extra informatie (bijv. datum, tijd, aantal passagiers)",
+    "contactNote": "Wij nemen zo snel mogelijk contact met u op om uw boeking te bevestigen.",
+    "submit": "Boekingsverzoek Versturen",
+    "submitting": "Versturen...",
+    "summary": "Overzicht",
+    "summaryFrom": "Van:",
+    "summaryTo": "Naar:",
+    "summaryDistance": "Afstand:",
+    "summaryDuration": "Reistijd:",
+    "summaryEstimatedPrice": "Geschatte Prijs:",
+    "contactEmail": "Email",
+    "contactPhone": "Telefoonnummer",
+    "contactMessage": "Bericht",
+    "contactPhonePlaceholder": "+31 6 123456",
+    "contactMessagePlaceholder": "Hoe kunnen we helpen?",
+    "contactSending": "Versturen...",
+    "contactSendMessage": "Bericht Versturen",
+    "wizardRoute": "Route",
+    "wizardContact": "Contact",
+    "wizardNextStep": "Volgende Stap",
+    "wizardBack": "Terug"
+  },
+  "toast": {
+    "success": "Boekingsverzoek Verstuurd!",
+    "message": "Wij nemen binnenkort contact met u op om uw taxi-boeking te bevestigen.",
+    "error": "Formulier verzenden mislukt. Probeer het opnieuw."
   }
 }

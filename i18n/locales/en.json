@@ -12,13 +12,14 @@
     "pricing": "Pricing"
   },
   "footer": {
-    "description": "Your eco-friendly taxi service in the Netherlands.",
+    "description": "Your fast taxi service in the Netherlands.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "pricing": "Pricing",
     "contact": "Contact",
     "contactInfo": "Contact",
     "phone": "+31 6 81914785",
+    "email": "info{at}huppietaxi.nl",
     "rights": "All rights reserved."
   },
   "services": {
@@ -28,12 +29,12 @@
     "cityRides": "City Rides",
     "cityRidesDescription": "Comfortable transportation for your daily commute or city exploration.",
     "longDistance": "Long Distance",
-    "longDistanceDescription": "Eco-friendly intercity travel with fixed competitive rates."
+    "longDistanceDescription": "Fast intercity travel with fixed competitive rates."
   },
   "whyUs": {
-    "title": "Why Choose EV-Horizon",
-    "ecoFriendly": "Eco-Friendly",
-    "ecoFriendlyDescription": "100% electric and hybrid vehicles",
+    "title": "Why Choose Huppie Taxi",
+    "ecoFriendly": "Fast Service",
+    "ecoFriendlyDescription": "Quick and efficient transportation",
     "affordable": "Affordable",
     "affordableDescription": "Competitive rates, no hidden fees",
     "comfortable": "Comfortable",
@@ -42,8 +43,8 @@
     "professionalDescription": "Experienced, certified drivers"
   },
   "hero": {
-    "title": "Eco-Friendly Rides for a Greener Tomorrow",
-    "description": "Choose sustainable transportation with EV-Horizon. Our eco-friendly fleet reduces carbon emissions while providing comfortable and reliable service.",
+    "title": "Fast Rides for Your Busy Schedule",
+    "description": "Choose fast transportation with Huppie Taxi. Our efficient fleet gets you to your destination quickly while providing comfortable and reliable service.",
     "cta": "Book Now"
   },
   "pricing": {
@@ -64,5 +65,46 @@
     "title": "Contact Us",
     "whatsapp": "Contact via WhatsApp",
     "info": "Contact Information"
+  },
+  "form": {
+    "from": "Pick-up Location",
+    "fromPlaceholder": "Enter pick-up address",
+    "to": "Drop-off Location",
+    "toPlaceholder": "Enter drop-off address",
+    "phone": "Phone Number",
+    "email": "Email",
+    "typeHere": "Type here",
+    "date": "Date",
+    "time": "Time",
+    "phonePlaceholder": "+31 6 12345678",
+    "passengers": "Number of Passengers",
+    "passengersPlaceholder": "1",
+    "message": "Message",
+    "messagePlaceholder": "Additional information (e.g., date, time, number of passengers)",
+    "contactNote": "We will contact you as soon as possible to confirm your booking.",
+    "submit": "Send Booking Request",
+    "submitting": "Submitting...",
+    "summary": "Summary",
+    "summaryFrom": "From:",
+    "summaryTo": "To:",
+    "summaryDistance": "Distance:",
+    "summaryDuration": "Duration:",
+    "summaryEstimatedPrice": "Estimated Price:",
+    "contactEmail": "Email",
+    "contactPhone": "Phone Number",
+    "contactMessage": "Message",
+    "contactPhonePlaceholder": "+31 6 123456",
+    "contactMessagePlaceholder": "How can we help you?",
+    "contactSending": "Sending...",
+    "contactSendMessage": "Send Message",
+    "wizardRoute": "Route",
+    "wizardContact": "Contact",
+    "wizardNextStep": "Next Step",
+    "wizardBack": "Back"
+  },
+  "toast": {
+    "success": "Booking Request Sent!",
+    "message": "We'll contact you shortly to confirm your taxi booking.",
+    "error": "Failed to submit form. Please try again."
   }
 }
