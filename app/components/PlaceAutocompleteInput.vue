@@ -20,6 +20,8 @@
         class="w-full pr-10"
         :placeholder="props.placeholder"
         @input="handleInput"
+        @compositionstart="handleCompositionStart"
+        @compositionend="handleCompositionEnd"
         @focus="handleFocus"
         @blur="handleBlur"
         @click="handleClick"
@@ -45,8 +47,7 @@
             :key="index"
             role="option"
             class="px-3 py-2 hover:bg-gray-100 cursor-pointer text-sm last:border-b-0 border-b border-gray-100"
-            @mousedown.prevent="handleSuggestionClick(suggestion)"
-            @touchstart.prevent="handleSuggestionClick(suggestion)"
+            @click="handleSuggestionClick(suggestion)"
           >
             {{ suggestion }}
           </div>
@@ -77,6 +78,7 @@ const emit = defineEmits<Emits>();
 const inputRef = ref<HTMLInputElement>();
 const inputContainerRef = ref<HTMLElement>();
 const isFocused = ref(false);
+const isComposing = ref(false);
 const autocomplete = usePlaceAutocomplete();
 
 const inputValue = defineModel<string>({ required: true });
@@ -117,7 +119,24 @@ watch(
   },
 );
 
-const handleInput = () => {
+const handleCompositionStart = () => {
+  isComposing.value = true;
+};
+
+const handleCompositionEnd = (event: CompositionEvent) => {
+  isComposing.value = false;
+  // Manually update the model with the composed value
+  if (event.target instanceof HTMLInputElement) {
+    inputValue.value = event.target.value;
+  }
+};
+
+const handleInput = (event: Event) => {
+  // Update immediately during composition for mobile keyboards
+  if (isComposing.value && event.target instanceof HTMLInputElement) {
+    inputValue.value = event.target.value;
+  }
+
   autocomplete.handleInput();
   emit('update:isValidSelection', false);
 };
@@ -139,8 +158,11 @@ const handleClick = () => {
 };
 
 const handleBlur = () => {
-  isFocused.value = false;
-  showSuggestions.value = false;
+  // Delay blur to allow click events to fire first
+  setTimeout(() => {
+    isFocused.value = false;
+    showSuggestions.value = false;
+  }, 200);
 };
 
 const handleSuggestionClick = (suggestion: string) => {
