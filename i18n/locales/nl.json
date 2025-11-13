@@ -8,7 +8,7 @@
     "language": "Taal",
     "switchToNL": "Schakel naar Nederlands",
     "switchToEN": "Schakel naar Engels",
-    "whyUs": "Waarom Huppie Taxi",
+    "whyUs": "Waarom wij",
     "pricing": "Tarieven"
   },
   "footer": {
@@ -18,7 +18,6 @@
     "pricing": "Tarieven",
     "contact": "Contact",
     "contactInfo": "Contact",
-    "email": "info{at}huppietaxi.nl",
     "rights": "Alle rechten voorbehouden."
   },
   "services": {
