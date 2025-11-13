@@ -59,7 +59,7 @@ export default defineNuxtConfig({
       { code: 'nl', iso: 'nl-NL', file: 'nl.json' },
       { code: 'en', iso: 'en-US', file: 'en.json' },
     ],
-    strategy: 'prefix_except_default',
+    strategy: 'no_prefix',
     bundle: {
       optimizeTranslationDirective: false,
     },

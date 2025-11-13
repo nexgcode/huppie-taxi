@@ -20,6 +20,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: 'Huppie Taxi - Fast Taxi Service' },
     { property: 'og:description', content: 'Your fast choice for taxi services. Book your ride today!' },
+    { name: 'keywords', content: 'Huppie Taxi, Taxi Nederland, Snelle taxiservice, Stadsritten taxi, Luchthavenvervoer taxi, Intercity taxi Nederland, Taxi lange afstand, Comfortabel taxi vervoer, Betrouwbare taxi, Professionele chauffeurs taxi, Taxi reserveren Nederland, Tarieven taxi, Taxi zonder verborgen kosten, Moderne taxi voertuigen, Efficiënte taxi service, Taxi voor drukke schema, Taxi contact Nederland' },
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

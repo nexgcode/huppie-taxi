@@ -6,19 +6,43 @@
           <div class="flex items-center">
             <NuxtLink to="/" class="text-2xl font-bold text-green-600">Huppie Taxi</NuxtLink>
           </div>
-          <div class="hidden md:flex space-x-8">
-            <NuxtLink to="/#services" class="text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
-            <NuxtLink to="/#why-us" class="text-gray-600 hover:text-green-600">{{ $t('nav.whyUs') }}</NuxtLink>
-            <NuxtLink to="/#pricing" class="text-gray-600 hover:text-green-600">{{ $t('nav.pricing') }}</NuxtLink>
-            <NuxtLink to="/#contact" class="text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
+          <div class="flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-8">
+              <NuxtLink to="/#services" class="text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
+              <NuxtLink to="/#why-us" class="text-gray-600 hover:text-green-600">{{ $t('nav.whyUs') }}</NuxtLink>
+              <NuxtLink to="/#contact" class="text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
+              <!-- Language Switcher for Desktop -->
+              <div class="flex items-center border-gray-300 pl-4">
+                <button
+                  class="text-2xl hover:scale-110 transition-transform"
+                  :title="locale === 'en' ? 'Switch to Dutch' : 'Switch to English'"
+                  aria-label="Toggle language"
+                  @click="switchLanguage(locale === 'en' ? 'nl' : 'en')"
+                >
+                  <img
+                    v-if="locale === 'nl'"
+                    src="/images/nl.png"
+                    alt="nl"
+                    class="w-[20px] h-[14px]"
+                  >
+                  <img
+                    v-else
+                    src="/images/en.png"
+                    alt="en"
+                    class="w-[20px] h-[14px]"
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Phone Number -->
+            <div class="hidden md:flex items-center">
+              <a href="tel:+31681914785" class="flex items-center text-green-600 hover:text-green-700 font-semibold">
+                <Phone class="w-5 h-5 mr-2" />
+                +31681914785
+              </a>
+            </div>
           </div>
-          <!-- Phone Number -->
-          <div class="hidden md:flex items-center">
-            <a href="tel:+31681914785" class="flex items-center text-green-600 hover:text-green-700 font-semibold">
-              <Phone class="w-5 h-5 mr-2" />
-              {{ $t('footer.phone') }}
-            </a>
-          </div>
+
           <div class="md:hidden">
             <button class="text-gray-600 hover:text-green-600" @click="isMenuOpen = !isMenuOpen">
               <span class="sr-only">{{ $t('nav.menu') }}</span>
@@ -32,20 +56,31 @@
           <NuxtLink to="/#services" class="block text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
           <NuxtLink to="/#about" class="block text-gray-600 hover:text-green-600">{{ $t('nav.about') }}</NuxtLink>
           <NuxtLink to="/#contact" class="block text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
-          <!-- Language Switcher (Commented out)
           <div class="pt-4 border-t border-gray-200">
-            <p class="text-sm text-gray-600 mb-2">{{ $t('nav.language') }}</p>
-            <div class="flex space-x-4">
-              <button @click="switchLanguage('en')" :class="{'text-green-600': locale === 'en', 'text-gray-600': locale !== 'en'}" class="hover:text-green-600">
-                EN
-              </button>
-              <span class="text-gray-300">|</span>
-              <button @click="switchLanguage('nl')" :class="{'text-green-600': locale === 'nl', 'text-gray-600': locale !== 'nl'}" class="hover:text-green-600">
-                NL
-              </button>
-            </div>
+            <p class="text-sm text-gray-600 mb-2">
+              {{ $t('nav.language') }}
+            </p>
+            <!-- Updated Mobile Language Switcher with Flag -->
+            <button
+              class="hover:scale-110 transition-transform"
+              :title="locale === 'en' ? 'Switch to Dutch' : 'Switch to English'"
+              aria-label="Toggle language"
+              @click="switchLanguage(locale === 'en' ? 'nl' : 'en')"
+            >
+              <img
+                v-if="locale === 'nl'"
+                src="/images/nl.png"
+                alt="nl"
+                class="w-[20px] h-[14px]"
+              >
+              <img
+                v-else
+                src="/images/en.png"
+                alt="en"
+                class="w-[20px] h-[14px]"
+              >
+            </button>
           </div>
-          -->
         </div>
       </nav>
     </header>
@@ -80,8 +115,10 @@
             </h3>
             <ul class="space-y-2 text-gray-400">
               <li class="flex items-center">
-                <Phone class="w-4 h-4 mr-2" />
-                {{ $t('footer.phone') }}
+                <a href="tel:+31681914785" class="flex items-center text-green-600 hover:text-green-700 font-semibold">
+                  <Phone class="w-4 h-4 mr-2" />
+                  +31681914785
+                </a>
               </li>
             </ul>
           </div>
@@ -98,9 +135,9 @@
 import { Menu, X, Phone } from 'lucide-vue-next';
 
 const isMenuOpen = ref(false);
-// const { locale } = useI18n();
+const { setLocale, locale } = useI18n();
 
-// const switchLanguage = (lang: 'en' | 'nl') => {
-//   locale.value = lang;
-// };
+const switchLanguage = (lang: 'en' | 'nl') => {
+  setLocale(lang);
+};
 </script>
