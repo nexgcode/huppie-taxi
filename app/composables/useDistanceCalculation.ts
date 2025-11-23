@@ -3,7 +3,6 @@ interface DistanceInfo {
   duration: string | undefined;
 }
 
-const BASE_RATE_EUR = 10;
 const PRICE_PER_KILOMETER_EUR = 1;
 
 interface DistanceMatrixResponse {
@@ -93,7 +92,20 @@ export function useDistanceCalculation() {
       return '';
     }
 
-    const price = kilometers * PRICE_PER_KILOMETER_EUR + BASE_RATE_EUR;
+    let price = kilometers * PRICE_PER_KILOMETER_EUR;
+
+    if (kilometers <= 60) {
+      price += 10;
+    } else if (kilometers <= 100) {
+      price += 20;
+    } else if (kilometers <= 200) {
+      price += 30;
+    } else if (kilometers <= 300) {
+      price += 40;
+    } else {
+      price += 50;
+    }
+
     return new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR' }).format(price);
   });
 
