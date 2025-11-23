@@ -20,7 +20,7 @@
           class="w-full"
           :class="{ 'border-red-500': phoneError }"
           :placeholder="$t('form.phonePlaceholder')"
-          @input="validatePhone"
+          @blur="validatePhone"
         />
         <p v-if="phoneError" class="text-red-500 text-sm mt-1">
           {{ $t('form.phoneError') }}
