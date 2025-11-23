@@ -54,7 +54,6 @@
         <!-- Mobile menu -->
         <div v-show="isMenuOpen" class="md:hidden mt-4 space-y-4">
           <NuxtLink to="/#services" class="block text-gray-600 hover:text-green-600">{{ $t('nav.services') }}</NuxtLink>
-          <NuxtLink to="/#about" class="block text-gray-600 hover:text-green-600">{{ $t('nav.about') }}</NuxtLink>
           <NuxtLink to="/#contact" class="block text-gray-600 hover:text-green-600">{{ $t('nav.contact') }}</NuxtLink>
           <div class="pt-4 border-t border-gray-200">
             <p class="text-sm text-gray-600 mb-2">
