@@ -18,7 +18,9 @@
     "pricing": "Tarieven",
     "contact": "Contact",
     "contactInfo": "Contact",
-    "rights": "Alle rechten voorbehouden."
+    "rights": "Alle rechten voorbehouden.",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Algemene Voorwaarden"
   },
   "services": {
     "title": "Onze Diensten",
@@ -104,5 +106,39 @@
     "success": "Boekingsverzoek Verstuurd!",
     "message": "Wij nemen binnenkort contact met u op om uw taxi-boeking te bevestigen.",
     "error": "Formulier verzenden mislukt. Probeer het opnieuw."
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "Huppie Taxi neemt uw privacy zeer serieus en handelt altijd in overeenstemming met de relevante privacywetgeving. Wij verzamelen uw persoonlijke gegevens uitsluitend om onze taxidiensten te leveren en contact met u op te nemen indien nodig. Uw gegevens worden nooit gedeeld met derden, tenzij wettelijk verplicht.",
+    "dataCollectionTitle": "Welke gegevens verzamelen wij?",
+    "dataCollectionContent": "Naam, telefoonnummer, e-mailadres en ophaal-/bestemmingsadres bij boekingen.",
+    "purposeTitle": "Doeleinden van gegevensverwerking:",
+    "purpose1": "Het uitvoeren van taxiritten",
+    "purpose2": "Contact over uw reservering",
+    "purpose3": "Verbetering van onze dienstverlening",
+    "retentionTitle": "Bewaartermijn:",
+    "retentionContent": "Wij bewaren uw gegevens niet langer dan noodzakelijk.",
+    "rightsTitle": "Uw rechten:",
+    "rightsContent": "U heeft het recht om uw gegevens in te zien, te corrigeren of te laten verwijderen. Neem hiervoor contact met ons op via ",
+    "contact": "Neem contact met ons op:",
+    "callUs": "Bel ons:",
+    "whatsapp": "Bericht ons op WhatsApp"
+  },
+  "termsConditions": {
+    "title": "Algemene Voorwaarden",
+    "bookingTitle": "Boeking en bevestiging",
+    "bookingContent": "Een taxirit dient vooraf gereserveerd te worden. U ontvangt altijd een bevestiging per e-mail of telefoon.",
+    "cancellationTitle": "Annuleren",
+    "cancellationContent": "Annulering van een rit dient minimaal 1 uur voor vertrek gemeld te worden.",
+    "cancellationWarning": "Indien u niet tijdig annuleert (minder dan 1 uur voor vertrek), bent u verplicht het volledige bedrag van de rit te betalen. Bij het niet betalen van dit bedrag, zal het Nederlands recht op u van toepassing zijn en zal de zaak worden opgevolgd door de bedrijfsadvocaat.",
+    "paymentTitle": "Betaling",
+    "paymentContent": "Betaling geschiedt contant of via pin, tenzij vooraf anders overeengekomen.",
+    "responsibilityTitle": "Verantwoordelijkheid",
+    "responsibilityContent": "Huppie Taxi is niet aansprakelijk voor vertragingen door externe factoren zoals verkeer of weersomstandigheden.",
+    "disputesTitle": "Geschillen",
+    "disputesContent": "Op deze voorwaarden is Nederlands recht van toepassing.",
+    "questions": "Heeft u vragen?",
+    "callUs": "Bel ons:",
+    "whatsapp": "Bericht ons op WhatsApp"
   }
 }

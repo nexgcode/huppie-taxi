@@ -106,6 +106,8 @@
             <ul class="space-y-2">
               <li><NuxtLink to="/#services" class="text-gray-400 hover:text-white">{{ $t('footer.services') }}</NuxtLink></li>
               <li><NuxtLink to="/#contact" class="text-gray-400 hover:text-white">{{ $t('footer.contact') }}</NuxtLink></li>
+              <li><NuxtLink to="/privacy-policy" class="text-gray-400 hover:text-white">{{ $t('footer.privacyPolicy') }}</NuxtLink></li>
+              <li><NuxtLink to="/terms-conditions" class="text-gray-400 hover:text-white">{{ $t('footer.termsConditions') }}</NuxtLink></li>
             </ul>
           </div>
           <div>

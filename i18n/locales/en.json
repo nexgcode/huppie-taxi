@@ -18,7 +18,9 @@
     "pricing": "Pricing",
     "contact": "Contact",
     "contactInfo": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions"
   },
   "services": {
     "title": "Our Services",
@@ -104,5 +106,39 @@
     "success": "Booking Request Sent!",
     "message": "We'll contact you shortly to confirm your taxi booking.",
     "error": "Failed to submit form. Please try again."
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "Huppie Taxi takes your privacy very seriously and always acts in accordance with relevant privacy legislation. We collect your personal data solely to provide our taxi services and to contact you when necessary. Your data is never shared with third parties unless legally required.",
+    "dataCollectionTitle": "What data do we collect?",
+    "dataCollectionContent": "Name, phone number, email address, and pick-up/destination address when making bookings.",
+    "purposeTitle": "Purposes of data processing:",
+    "purpose1": "Executing taxi rides",
+    "purpose2": "Contact regarding your reservation",
+    "purpose3": "Improvement of our services",
+    "retentionTitle": "Retention period:",
+    "retentionContent": "We do not retain your data longer than necessary.",
+    "rightsTitle": "Your rights:",
+    "rightsContent": "You have the right to view, correct, or delete your data. Please contact us at ",
+    "contact": "Contact us:",
+    "callUs": "Call us:",
+    "whatsapp": "Message us on WhatsApp"
+  },
+  "termsConditions": {
+    "title": "Terms & Conditions",
+    "bookingTitle": "Booking and confirmation",
+    "bookingContent": "A taxi ride must be reserved in advance. You will always receive a confirmation by email or phone.",
+    "cancellationTitle": "Cancellation",
+    "cancellationContent": "Cancellation of a ride must be reported at least 1 hour before departure.",
+    "cancellationWarning": "If you do not cancel in time (less than 1 hour before departure), you are obliged to pay the full amount of the ride. If you fail to pay this amount, Dutch law will apply and the matter will be followed up by the company lawyer.",
+    "paymentTitle": "Payment",
+    "paymentContent": "Payment is made in cash or by card, unless otherwise agreed in advance.",
+    "responsibilityTitle": "Responsibility",
+    "responsibilityContent": "Huppie Taxi is not liable for delays due to external factors such as traffic or weather conditions.",
+    "disputesTitle": "Disputes",
+    "disputesContent": "These terms are governed by Dutch law.",
+    "questions": "Do you have questions?",
+    "callUs": "Call us:",
+    "whatsapp": "Message us on WhatsApp"
   }
 }
