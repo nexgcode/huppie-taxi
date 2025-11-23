@@ -9,6 +9,7 @@ export interface ContactData {
   email: string;
   date: string | undefined;
   time: string | undefined;
+  acceptedTerms: boolean;
 }
 
 export interface DistanceInfo {
@@ -39,4 +40,5 @@ export const INITIAL_CONTACT_DATA: ContactData = {
   email: '',
   date: undefined,
   time: undefined,
+  acceptedTerms: false,
 };
