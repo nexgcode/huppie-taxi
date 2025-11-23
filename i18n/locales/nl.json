@@ -100,7 +100,13 @@
     "wizardRoute": "Route",
     "wizardContact": "Contact",
     "wizardNextStep": "Volgende Stap",
-    "wizardBack": "Terug"
+    "wizardBack": "Terug",
+    "phoneError": "Voer een geldig telefoonnummer in (bijv. +31612345678 of 0612345678)",
+    "paymentMethodsTitle": "Betaalmethoden",
+    "card": "Pin",
+    "cash": "Contant",
+    "termsPrefix": "Ik ga akkoord met de",
+    "termsLink": "algemene voorwaarden"
   },
   "toast": {
     "success": "Boekingsverzoek Verstuurd!",

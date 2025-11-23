@@ -100,7 +100,13 @@
     "wizardRoute": "Route",
     "wizardContact": "Contact",
     "wizardNextStep": "Next Step",
-    "wizardBack": "Back"
+    "wizardBack": "Back",
+    "phoneError": "Please enter a valid phone number (e.g. +31612345678 or 0612345678)",
+    "paymentMethodsTitle": "Payment Methods",
+    "card": "Card",
+    "cash": "Cash",
+    "termsPrefix": "I agree to the",
+    "termsLink": "terms & conditions"
   },
   "toast": {
     "success": "Booking Request Sent!",

@@ -72,7 +72,20 @@ export const useBookingStore = defineStore('booking', () => {
   });
 
   const isContactStepValid = computed(() => {
-    return contactData.value.phone.trim() !== '';
+    const cleanPhone = contactData.value.phone.replace(/[\s\-()]/g, '');
+
+    if (cleanPhone.length === 0) {
+      return false;
+    }
+
+    // International phone number validation (E.164 format)
+    const internationalRegex = /^\+[1-9]\d{6,14}$/;
+    // Dutch local format (starting with 0)
+    const dutchLocalRegex = /^0[1-9]\d{8}$/;
+
+    const isPhoneValid = internationalRegex.test(cleanPhone) || dutchLocalRegex.test(cleanPhone);
+
+    return isPhoneValid && contactData.value.acceptedTerms;
   });
 
   const isFormValid = computed(() => {
