@@ -12,12 +12,6 @@
         <div class="pt-2 border-t border-gray-200 space-y-1">
           <SummaryRow :label="$t('form.summaryDistance')" :value="props.distanceInfo.distance" />
           <SummaryRow :label="$t('form.summaryDuration')" :value="props.distanceInfo.duration" />
-          <SummaryRow
-            v-if="props.estimatedPrice"
-            :label="$t('form.summaryEstimatedPrice')"
-            :value="props.estimatedPrice"
-            highlight
-          />
         </div>
       </template>
     </div>
