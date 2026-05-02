@@ -19,31 +19,28 @@ function formatBookingMessage(
   price: string | null,
   distance: DistanceInfo | null,
 ): string {
-  const sections = [
-    `Nieuwe boeking:`,
-    `\nVan:\n${route.from}`,
-    `Naar:\n${route.to}`,
-    `\nTelefoon:\n${contact.phone}`,
-    `Email:\n${contact.email}`,
-  ];
+  const lines: string[] = [];
 
-  if (contact.date) {
-    sections.push(`\nDatum:\n${contact.date}`);
-  }
+  lines.push(`Van: ${route.from}`);
+  lines.push(`Naar: ${route.to}`);
 
-  if (contact.time) {
-    sections.push(`Tijd:\n${contact.time}`);
-  }
+  lines.push('');
+  if (contact.date) lines.push(`Datum: ${contact.date}`);
+  if (contact.time) lines.push(`Tijd: ${contact.time}`);
+  lines.push(`Prijs: ${price}`);
 
-  sections.push(`\nAantal passagiers:\n${route.passengers}`);
-  sections.push(`Estimatie prijs:\n${price}`);
-
+  lines.push('');
   if (distance) {
-    sections.push(`Afstand:\n${distance.distance}`);
-    sections.push(`Rijduur:\n${distance.duration}`);
+    lines.push(`Rijduur: ${distance.duration}`);
+    lines.push(`Afstand: ${distance.distance}`);
   }
 
-  return sections.join('\n');
+  lines.push('');
+  lines.push(`Passagiers: ${route.passengers}`);
+  lines.push(`Telefoon: ${contact.phone}`);
+  lines.push(`Email: ${contact.email}`);
+
+  return lines.join('\n');
 }
 
 export const useBookingStore = defineStore('booking', () => {
